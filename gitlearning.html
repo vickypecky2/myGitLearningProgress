@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myGitLearningProcess </title>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-<body>
+<body >
     <article>
         <h1> Concept of Git</h1>
             <p> Git is a version control system for tracking changes in computer files. 
@@ -109,15 +110,57 @@
                                             Push a branch to Github: Push the commit in your branch to your new GitHub repo. Tis allows other people to see the changes you've made.
                                             This is done by using the command key <strong>git push -u origin yourbranchname</strong>
                                         </li>
-
-
-
                                     </ol>
                             </p>
+                                        <p>
+                                            <span> Other commands include the git pull, git merge including advanced git attribute.</span>
+                                        </p>
+                                        <div>
+                                           <h3>Cloning a Github repository</h3>
+                                           <p>
+                                               We can create our own local repo and push it to Github. if you aren't the on that created the repo.One would have to make a copy on local machine.
+                                               Once a project has been uploaded onto the remote repository,developers can get their own copy of this repo using the <strong>git clone</strong> command.
+                                               To clone to local machine,go to terminal and provide the URL in the following command <strong> git clone <span>URL</span>  </strong>
+                                           </p>
+                                           <p>
+                                               Branching and merging: Branches let you work on new features or bug fixes of the main project code that is presenton the master branch.
+                                               <br>
+                                               <Strong>
+                                                   Do not pull directly to the master branch (main project branch) especially when working with group of dev.
+                                               </Strong>
+                                               Branches let you experiment with new features or idea and even let you create a new branches in parallel to experiment with different features.
+                                               Create new branch using <strong>git branch</strong>
+                                           </p>
+                                           <p>Once confident that the code is working well, integrate it with master branch using the <strong>git merge command</strong>
+                                                <br>
+                                                To merge to master when sure there is no more bugs:
+                                                <strong>git merge branch name -m "messages"</strong>
+                                        </p>
+                                        <p>
+                                            Pull using Git: 
+                                            <br>
+                                            Pull: Lets you fetch any updates from the remote repo and merge it with the local repo, using pull command
+                                            <span>git pull orgin branch-name</span>
+                                        </p>
+                                        </div>
 
-
-
-
-</article>
+                                            <p>
+                                                <ul>
+                                                <em>References to articles that helped me through:</em>
+                                                 
+                                                    <li>
+                                                        <a href="https://www.analyticsvidhya.com/blog/2020/05/git-github-essenial-guide-beginners/" target="blank1">Git-Github Essential guide for Beginner</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.youtube.com/watch?v=e0eGZsnqGBQ" target="blank2">Git tutorial - Basic</a>
+                                                    </li>
+                                                     <li><a href="https://guides.github.com/activities/hello-world/" target="blank3"> Guide to Github</a> </li>
+                                                     <li>
+                                                        <strong>git_tutorial.pdf</strong>
+                                                    </li>
+                                                    </ul>
+                                            </p>
+                                            <footer> @ vickypecky@gmail.com firstPractice using HTML5 + CSS to write Basics of Git and Github. I need to improve !!!. </footer> <!--thanks to coach, Larrystone-->
+</article>                       
 </body>
 </html>
