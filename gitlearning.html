@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myGitLearningProcess </title>
+</head>
+<body>
+    <article>
+        <h1> Concept of Git</h1>
+            <p> Git is a version control system for tracking changes in computer files. 
+                it is used for coordinating work among several people on a project and tracking progress overtime.
+            </p>
+            <p>Git is a widely used version control system (VSC) that lets you track of all the modifications you make to your code.
+                Git is a distributed VCS, this means that every collaborator of the project will have a history of the changes made on their local machine.
+            </p>
+                <h2>GitHub</h2>
+                    <p>Github on the other is a widely used platform for version control that used Git at its core. 
+                        It lets you host the remote version of your project from where all the collaborators can have access to it.
+                        Not just your own team member,but any member of Github can contribute to your code(that is if you choose to accept the changes made).
+                        Github is like a social platform where you can find a plethora of open-source projects with their codes.
+                        All the new and emerging technologies can be found on this platform <a href="http">Github.com</a>
+                    </p>
+                    <h3>Terminologies in Git</h3>
+                        <p>
+                            <ul>
+                                <li>
+                                   <strong>Repository:</strong> Repo is a folder ths contain all the project files that the history of the versions made to each.
+                                            <p>There are two repositories of your project that you will work throughout the lifetime of your project.
+                                                <ol>
+                                                    <li>
+                                                       <strong>Remote repo:-</strong> Its contains your project that can be accessed from anywhere and by anyone.
+                                                        this is the remote repository live on github and anybody can access it.
+                                                     </li>
+                                                     <li>
+                                                         <strong>Local Repo:-</strong> This is a copy of the remote repo that resides on your local machine. 
+                                                         All the changes you make will be savedin your local repo. Fellow developers will not be able to see them 
+                                                         yet untill it is push to the remote repo.
+                                                     </li>
+                                                </ol>
+                                            </p>
+                                </li>
+                                <li>
+                                    <strong>Cloning:</strong> means creating a copy of the remote repo on your local machine. Now you can make changes to the project on your local machine.
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h3>Basic Git commands</h3>
+                                 <ul>
+                                    <li>
+                                       <strong> Git Config--</strong> configure the username and email address
+                                    </li>
+                                    <li><strong>Git init--</strong> Initiaze an empty Git repo</li>
+                                    <li><strong>Git add--</strong> Add the content to the staging area</li>
+                                    <li><strong>Git diff--</strong> View the changes made to the file</li>
+                                    <li><strong>Git commit--</strong> Makes sure that the changes are saved to the local repo</li>
+                                    <li><strong>Git reset--</strong> Undo local changes to the state of a Git repo</li>
+                                    <li><strong>Git status--</strong> Display the state of the working diectory and staging area</li>
+                                    <li><strong>Git merge--</strong> Merge a branch into an active branch</li>
+                                    <li><strong>Git Push--</strong> Upload content from local repo to a remote repo</li>
+                                    <li><strong>Git Pull--</strong> Fetch and merge changes from the remote repo</li>
+                                 </ul>
+
+                        </p>
+                            <p>
+                                <h2>Beginner Step to using Git command prompt</h2>
+                                    <ol>
+                                        <strong>Step 1</strong>
+                                        <br>
+                                        <li> Make sure terminal has right project directory</li>
+                                        <br>
+                                        <strong>Step 2</strong> 
+                                        <li> Initialise a repository using <strong>git init</strong> command</li>
+                                        <br>
+                                        <strong>Step 3</strong>
+                                        <li>Configure Git: Make git know who make the changes by using <strong>git config</strong> command</li>
+                                        <br>
+                                        <strong>Step 4</strong>
+                                        <li>Add file to project directory using <strong>git add <file-name></strong>
+                                             <em>Adding files are in a place called staging</em>
+                                             <p><strong>Staging area</strong> is an intermediate place between working directory and local git repo
+                                            where any changes that are made can be reviewed before actually been commited them to the repo.</p>
+                                        </li>
+                                        <br>
+                                        <strong>Step 4</strong>
+                                        <li>After the staging area, take a snapshot of all the changes made, which are reflected in the staging area, 
+                                            and save them in the Git repo using <strong>git command -m 'commit message'</strong>
+                                            <p><strong>NOTE: </strong>The whole point of version control is to keep a record of the changes that were made. 
+                                                Do this using the <strong>git log command</strong> it gives a complete view of all the commits that were made in reverse chronological order.</p>
+                                        </li>
+                                        <br>
+                                        <strong>Step 5</strong>
+                                        <li>Create a new branch. Branch allow to move back and forth between 'states' of a project.
+                                            when one create a new branch, git keep track of which commit the branch "branched off of", so it knows the history behind all the files.
+                                            <p>Let's says you are on the master branch and want to create a new branch to develop your web page. <strong>Run: git checkout -b <my branch name></strong>
+                                                This command will automatically create a new branch and then 'check you out' on it i .e git will move you to that branch, off of the master branch.
+                                            </p>
+                                            <Span>Use 'git branch' command to confirm that yout branch was created</Span>
+                                        </li>
+                                        <br>
+                                        <strong>Step 6</strong>
+                                        <li>
+                                            Create a new repository on Github: This require your log in and creating a new repo on github home page.
+                                        </li>
+                                        <br>
+                                        <strong>Step 7</strong>
+                                        <li>
+                                            Push a branch to Github: Push the commit in your branch to your new GitHub repo. Tis allows other people to see the changes you've made.
+                                            This is done by using the command key <strong>git push -u origin yourbranchname</strong>
+                                        </li>
+
+
+
+                                    </ol>
+                            </p>
+
+
+
+
+</article>
+</body>
+</html>
